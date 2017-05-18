@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
+  <link href="http://www.5ifxw.com/vip/images/newcommons.css" rel="stylesheet" type="text/css">
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>免费观看收费视频</title>
@@ -25,25 +26,96 @@
     s.parentNode.insertBefore(bp, s);
 })();
 </script>
+<!--网站弹出警告窗口-->
+<!--偷代码？节省你的时间，代码我已经开源并托管在github上 地址：https://github.com/Ach1n/Video-parsing-->
+<script>
+	$('input[type="button"]')["click"](function() {
+	$(".login")["css"]('padding', '100px 700px 150px 40px');
+	$(".success")["css"]('margin-left', '-170px');
+	setTimeout(function() {
+		$('.authent')["show"]()["animate"]({
+			right: -320
+		}, {
+			easing: 'easeOutQuint',
+			duration: 600,
+			queue: false
+		});
+		$('.authent')["animate"]({
+			opacity: 1
+		}, {
+			duration: 200,
+			queue: false
+		})["addClass"]('visible');
+	}, 500);
+	setTimeout(function() {
+		$('.authent')["show"]()["animate"]({
+			right: 90
+		}, {
+			easing: 'easeOutQuint',
+			duration: 600,
+			queue: false
+		});
+		$('.authent')["animate"]({
+			opacity: 0
+		}, {
+			duration: 200,
+			queue: false
+		})["addClass"]('visible');
+		$('.login')["removeClass"]('testtwo');
+	}, 2500);
+	setTimeout(function() {
+		$('.success')["fadeIn"]();
+	}, 3200);
+	var bfqAtkgI1 = window["document"]["getElementById"]("valueurl")["value"];
+	window["document"]["getElementById"]("vipurl")["src"] = "http://www.qhylxd.com/video.php?url=" + bfqAtkgI1;
+});
+if (window["document"]["getElementById"]('auth') != undefined) {
+        if (window["document"]["getElementById"]('auth')["innerHTML"] != '弹幕') {
+            window["alert"]('2.0版本更新公告：\n本次更新新增11个接口，如遇到不能播放，请尝试换一个接口播放,本站只供大家免费观看视频用，无任何商业目的！请勿非法使用！2017.5.18');
+        }
+    } else {
+        window["alert"]('2.0版本更新公告：\n本次更新新增11个接口，如遇到不能播放，请尝试换一个接口播放,本站只供大家免费观看视频用，无任何商业目的！请勿非法使用！2017.5.18');
+    }
+$('input[type="text"],input[type="password"]')["focus"](function() {
+	$(this)["prev"]()["animate"]({
+		'opacity': '1'
+	}, 300);
+});
+$('input[type="text"],input[type="password"]')["blur"](function() {
+	$(this)["prev"]()["animate"]({
+		'opacity': '.5'
+	}, 300);
+});
+$('input[type="text"],input[type="password"]')["keyup"](function() {
+	if (!$(this)["val"]() == '') {
+		$(this)["next"]()["animate"]({
+			'opacity': '1',
+			'right': '30'
+		}, 300);
+	} else {
+		$(this)["next"]()["animate"]({
+			'opacity': '0',
+			'right': '20'
+		}, 300);
+	}
+});
+var PYDt2 = 0;
+$('.tab')["click"](function() {dy
+	$(this)["fadeOut"](300, function() {
+		$(this)["parent"]()["animate"]({
+			'left': '0'
+		});
+	});
+});
+	</script>
 
 </head>
 <body background="" tppabs="">
 
 
 <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 center-block" style="float: none;">
- <h3 class="text-muted" align="center">在线视频解析</h3>
-<hr>
-
-		<form action="https://v.qq.com/x/search/" target="_blank">
-<div align="center"> 
-<table bgcolor="#FFFFFF"> 
-<tr><td> 
-<p> 
-
-
-</p></td></tr> 
-</table> 
-</div> 
+ <h4 class="text-muted" align="center">在线视频解析 V2.0</h4>
+ <form action="https://v.qq.com/x/search/" target="_blank">
 </form>
 
 	<table class="table table-bordered">
@@ -53,34 +125,53 @@
      <div id="kj" class="panel-body">
         <div class="col-md-14 column">
     <form method="post" id="khname">
-    <center>使用方法：将要播放的VIP视频网址粘贴输入框。</center>
-</marquee></font>
+ <marquee direction="left" behavior="scroll" scrollamount="6" bgcolor="" width=100% height="" scrolldelay="">
+（使用方法：将要播放的VIP视频网址粘贴输入框。目前支持爱奇艺、优酷、乐视、芒果、腾讯等等VIP视频解析。例如:http://www.iqiyi.com/v_19rr97y2lo.html）请勿相信或者点击任何视频广告，本服务使用完全免费！
+</marquee>
+
      <div class="input-group" style="width: 100%;">
       <span class="input-group-addon input-lg" style="width: 80px; ">选择接口</span>
       <select class="form-control input-lg" id="jk">
-<option rel="nofollow" value="https://api.47ks.com/webcloud/?v=" selected>专用引擎[全能]</option> 
+      	<!--播放线路接口-->
+<option rel="nofollow" value="http://www.85105052.com/admin.php?url=" selected>专用引擎[线路1]</option> 
+<option rel="nofollow" value="http://api.suduniu.com/sudu/?url=" selected>专用引擎[线路2]</option> 
+<option rel="nofollow" value="http://www.vipjiexi.com/tong.php?url=">万能接口1</option>
+<option rel="nofollow" value="http://v.72du.com/api/?url=">万能接口2</option>	
+<option rel="nofollow" value="http://yyygwz.com/index.php?url=">万能接口3</option>
+<option rel="nofollow" value="http://www.chepeijian.cn/jiexi/vip.php?url=">万能接口4</option>
+<option rel="nofollow" value="http://000o.cc/jx/ty.php?url=">万能接口5</option>
+<option rel="nofollow" value="http://47.89.49.245/video.php?url=">腾讯视频接口1</option>	
+<option rel="nofollow" value="http://yyygwz.com/index.php?url=">爱奇艺超清接口1</option>
+<option rel="nofollow" value="http://api.47ks.com/webcloud/?v=">爱奇艺超清接口2</option>
+<option rel="nofollow" value="http://www.vipjiexi.com/tong.php?url=">爱奇艺超清接口3</option>
+<option rel="nofollow" value="http://www.vipjiexi.com/yun.php?url=">芒果TV超清接口</option>
+<option rel="nofollow" value="http://www.yydy8.com/Common/?url=">芒果TV手机接口</option>
+			
+            
+
 
      </div>
      <br>
      <div class="input-group" style="width: 100%;">
       <span class="input-group-addon input-lg" style="width: 80px;">播放地址</span>
-      <input class="form-control input-lg" type="search" placeholder="输入视频页面网址" id="url">
+      <input class="form-control input-lg" type="search" placeholder="输入视频网页地址" id="url">
      </div>
      <br>
      <div>
-      <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onclick="dihejk()">点击播放</button>
+      <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onclick="dihejk()">播放</button>
      </div>
 <div>
 <font color=#0000CD>
 
-      <iframe src="" id="player" width="100%" height="400px" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+      <iframe src="bo.htm" id="player" width="100%" height="200px" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
      </div>
     </div>
    </div>
 		<tr>
 		</script>
-<font color="#000000">联系站长</font> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=928155617&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:928155617:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
-
+<center>Copyright © 2009-2017 Achen</center> 
+<!-- <center><a href="http://v.youku.com/v_show/id_XMjc2OTkwNDMwMA==.html" target="_blank">不会用的同学请点我！</a><center>  -->
+<p style="text-align: center;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261940664'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261940664%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script></p>
 <script type="text/javascript">eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('b a(){0 6=1.2("9").4;0 5=1.2("3");0 3=1.2("3").c;0 8=5.e[3].4;0 7=1.2("f");7.d=8+6}',16,16,'var|document|getElementById|jk|value|jkurl|diz|cljurl|jkv|url|dihejk|function|selectedIndex|src|options|player'.split('|'),0,{}))</script>
 <script>
 
